@@ -50,6 +50,10 @@ body{
     background-color: #fff;
     text-align: center;
 }
+.logo{
+    font-size: 100px;
+    color: aquamarine;
+}
 
 .form{
     display: grid;
