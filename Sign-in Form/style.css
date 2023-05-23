@@ -14,7 +14,7 @@ body{
     display: grid;
     place-items: center;
     margin:0;
-    padding: 0 40px;
+    padding: 0px 40px;
     font-family: "Ubuntu",sans-serif;
     background-color: #f5f5f5;
 }
@@ -97,4 +97,42 @@ body{
 .form>button:hover{
     color: #000;
     background-color: rgb(240, 255, 127);
+}
+
+.card>footer>a{
+    transition: all 0.25s;
+}
+
+.card>footer>a:hover{
+    color: aquamarine;
+}
+
+/* media for better response */
+
+@media (min-width: 350px){
+    body{
+        padding:0;
+    }
+    .card{
+        margin: 0px;
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 500px){
+    body{
+        padding:0;
+    }
+    .card{
+        margin: 0px;
+        width: 70%;
+    }
+}
+
+@media (min-width: 750px){
+    .card{
+        width: 80%;
+    }
+    
 }
