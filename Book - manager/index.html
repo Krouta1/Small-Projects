@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Book - manager | Krouta</title>
+</head>
+<body>
+    <header>
+
+        <div class="section-one">
+            <i class="material-icons">library_books</i>
+            <h1>Book - manager | Krouta</h1>
+        </div>
+
+        <div class="section-split">
+            <span class="splitter"></span>
+        </div>
+    </header>
+    <main>
+
+        <div class="card showen">
+            <i class="material-icons" id="add">add</i>
+            <div class="modal">
+                    <input type="text" name="title" id="title" placeholder="2001: A Space Odyssey">
+                    <input type="text" name="first-name" id="first-name" placeholder="Arthur">
+                    <input type="text" name="last-name" id="last-name" placeholder="Clarke">
+                    <input type="number" name="pages" id="pages" placeholder="Pages">
+                    <div class="read">
+                        <label for="read">Read</label>
+                        <input type="checkbox" name="read" id="read" checked>
+                    </div>
+                    <button type="submit">SUBMIT</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="title read"> Dummy title</h2>
+            <p class="author read">Mr.Mistrovič</p>
+            <p class="pages read" >Pages:259</p>
+            <div class="read">
+                <label for="read"> Read</label>
+                <input type="checkbox" name="read" id="read-card">
+            </div>
+            <button class="delete">DELETE</button>
+        </div>
+    
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
