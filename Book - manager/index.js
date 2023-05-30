@@ -14,6 +14,15 @@ function Book(title, fname, lname, pages, read){
     this.read = read;
 }
 
+Book.prototype.toggleRead = function () { // kinda tricky way to toggle read property of book, every instance have access to this funciton
+    this.read = !this.read;
+}
+
+function toggleRead(index){
+    myLibrary[index].toggleRead() // there is instance Book (myLibrary[index]) and you can use toggleRead coz of prototype inheretence. This way you have only one toggleRead for whole array of Books
+    render()
+}
+
 // render Obj of myLibrary to the DOM
 function render(){
     let library= document.getElementById("library")
@@ -28,7 +37,8 @@ function render(){
         </div>
         <p>${book.pages}</p>
         <p>${book.read ? "Read":"Not read yet"}</p>
-        <button id="remove-btn" onclick="removeBook(${index})">Remove</button> 
+        <button id="remove-btn" onclick="removeBook(${index})">Remove</button>
+        <button id="toggle-read" onclick="toggleRead(${index})">Read</button>  
     </div>`})
     
 }
@@ -59,3 +69,4 @@ newBookForm.addEventListener("submit",function(e){
     render()
     newBookForm.style.display = "none"
 })
+
