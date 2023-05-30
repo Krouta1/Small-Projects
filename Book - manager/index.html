@@ -4,50 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Book - manager | Krouta</title>
 </head>
 <body>
     <header>
-
-        <div class="section-one">
-            <i class="material-icons">library_books</i>
-            <h1>Book - manager | Krouta</h1>
-        </div>
-
-        <div class="section-split">
-            <span class="splitter"></span>
-        </div>
+        <i class="fa-solid fa-book"></i>
+        <h1>Book - manager by Krouta</h1>
     </header>
     <main>
-
-        <div class="card showen">
-            <i class="material-icons" id="add">add</i>
-            <div class="modal">
-                    <input type="text" name="title" id="title" placeholder="2001: A Space Odyssey">
-                    <input type="text" name="first-name" id="first-name" placeholder="Arthur">
-                    <input type="text" name="last-name" id="last-name" placeholder="Clarke">
-                    <input type="number" name="pages" id="pages" placeholder="Pages">
-                    <div class="read">
-                        <label for="read">Read</label>
-                        <input type="checkbox" name="read" id="read" checked>
-                    </div>
-                    <button type="submit">SUBMIT</button>
-            </div>
+        <div class="btn">
+            <button class="new-book" id="new-book-btn">Add New Book</button>
         </div>
-
-        <div class="card">
-            <h2 class="title read"> Dummy title</h2>
-            <p class="author read">Mr.Mistrovič</p>
-            <p class="pages read" >Pages:259</p>
-            <div class="read">
-                <label for="read"> Read</label>
-                <input type="checkbox" name="read" id="read-card">
+        
+        <form id="new-book-form">
+            <div class="form-container">
+                <input type="text" name="title" id="title" placeholder="A Game of Thrones">
+                <input type="text" name="first-name" id="first-name" placeholder="George">
+                <input type="text" name="last-name" id="last-name" placeholder="R. R. Martin">
+                <input type="number" name="pages" id="pages" placeholder="Pages">
+                <div class="check">
+                    <label for="read">Read</label>
+                    <input type="checkbox" name="read" id="read">
+                </div>
+                <input type="submit" value="Add Book">
             </div>
-            <button class="delete">DELETE</button>
+        </form>
+        <div class="library" id="library">
+            <!-- Books from the Library goes here -->
         </div>
-    
     </main>
     <script src="index.js"></script>
 </body>
