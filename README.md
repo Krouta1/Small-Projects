@@ -4,7 +4,7 @@
 
 Sites to view projects:
 
- Sign - in Form : https://nimble-pavlova-a69350.netlify.app
- Dashboard - UI : Needs some small changes
- Sign-in form : Needs UI changes
- Tic Tac Toe : Works nice, but ugly. Needs some UI changes.
+  Sign - in Form : https://nimble-pavlova-a69350.netlify.app
+  Dashboard - UI : Needs some small changes
+  Sign-in form : Needs UI changes
+  Tic Tac Toe : Works nice, but ugly. Needs some UI changes.
