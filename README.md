@@ -8,6 +8,6 @@ Sites to view projects:
   
   Dashboard - UI : Needs some small changes
   
-  Sign-in form : Needs UI changes
+  Book - manager : Needs UI changes
   
   Tic Tac Toe : Works nice, but ugly. Needs some UI changes.
