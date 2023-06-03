@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+:root{
+    --clr-primary: #1E5128;
+    --clr-light:#f4f4f4;
+    --clr-dark: #333;
+    --clr-warning: #FF6969;
+}
+
+::after,::before{
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family:'Bruno Ace',sans-serif ;
+    font-size: 1.5rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+
+    display: grid;
+    grid:
+        "header header header header" auto
+        "...... lists  active ....."  auto /
+        1fr minmax(100px,300px) minmax(250px,500px) 1fr;   
+}
+
+.title{
+    grid-area: header;
+    text-align: center;
+    font-size: calc(4vw + 2rem);
+    color: rgb(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    margin: -.1em 0 0.4em;
+}
+
+.all-tasks{
+    grid-area: lists;
+}
+
+.task-list{
+    line-height: 2;
+}
+
+.todo-list{
+    grid-area: active;
+}

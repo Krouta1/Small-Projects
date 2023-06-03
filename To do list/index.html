@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo List | Krouta</title>
+</head>
+<body>
+    <h1 class="title">My epic assignment list</h1>
+
+    <div class="all-tasks">
+        <h2 class="task-list-title">My tasks</h2>
+        <ul class="task-list">
+            <li class="active-list">Work</li>
+            <li>Home</li>
+            <li>Gym</li>
+        </ul>
+
+        <form action="">
+            <input type="text" class="new list" placeholder="New group" aria-label="New group">
+            <button class="btn list" aria-label="create new list">+</button>
+        </form>
+    </div>
+
+    <div class="todo-list">
+        <div class="todo-header">
+            <h2 class="list-title">Work</h2>
+            <p class="task-count"> 2 tasks remaining</p>
+        </div>
+        <div class="todo-body">
+            <div class="tasks">
+                <div class="task">
+                    <input type="checkbox" name="" id="task-1">
+                    <label for="task-1">
+                        <span class="custom-checkbox"></span>
+                        Call the manager</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="" id="task-2">
+                    <label for="task-2">
+                        <span class="custom-checkbox"></span>
+                        Call the manager</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="" id="task-3">
+                    <label for="task-3">
+                        <span class="custom-checkbox"></span>
+                        Call the manager</label>
+                </div>
+            </div>
+            <div class="new-task-creator">
+                <form action="">
+                    <input type="text" class="new list" placeholder="New task" aria-label="New task">
+                    <button class="btn task" aria-label="create new task">+</button>
+                </form>
+            </div>
+            <div class="detelet-task">
+                <button class="btn delete">Cleare completed task</button>
+                <button class="btn delete">Delete all tasks</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
