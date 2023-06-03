@@ -11,5 +11,4 @@ Sites to view projects:
   Book - manager : Needs UI changes
   
   Tic Tac Toe : Works nice, but ugly. Needs some UI changes.
-  
-  Reastaurant landing: Missing node_modules, doesnt work properly, no CSS :(
+ 
