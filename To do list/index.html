@@ -13,9 +13,7 @@
     <div class="all-tasks">
         <h2 class="task-list-title">My tasks</h2>
         <ul class="task-list" data-lists>
-            <!-- <li class="list-name active-list">Work</li>
-            <li class="list-name ">Home</li>
-            <li class="list-name ">Gym</li> -->
+            <!-- list goes here -->
         </ul>
 
         <form action="" data-new-list-form>
@@ -24,45 +22,37 @@
         </form>
     </div>
 
-    <div class="todo-list">
+    <div class="todo-list" data-list-display-container>
         <div class="todo-header">
-            <h2 class="list-title">Work</h2>
-            <p class="task-count"> 2 tasks remaining</p>
+            <h2 class="list-title" data-list-title>Work</h2>
+            <p class="task-count" data-list-count> 2 tasks remaining</p>
         </div>
         <div class="todo-body">
-            <div class="tasks">
-                <div class="task">
-                    <input type="checkbox" name="" id="task-1">
-                    <label for="task-1">
-                        <span class="custom-checkbox"></span>
-                        Call the manager</label>
-                </div>
-                <div class="task">
-                    <input type="checkbox" name="" id="task-2">
-                    <label for="task-2">
-                        <span class="custom-checkbox"></span>
-                        Call the manager</label>
-                </div>
-                <div class="task">
-                    <input type="checkbox" name="" id="task-3">
-                    <label for="task-3">
-                        <span class="custom-checkbox"></span>
-                        Call the manager</label>
-                </div>
+            <div class="tasks" data-tasks>
+              <!-- task goes here -->
             </div>
             <div class="new-task-creator">
-                <form action="">
-                    <input type="text" class="new task" placeholder="New task" aria-label="New task">
+                <form action="" data-new-task-form>
+                    <input type="text" class="new task" placeholder="New task" aria-label="New task" data-new-task-input>
                     <button class="btn create" aria-label="create new task">+</button>
                 </form>
             </div>
             <div class="delete-task">
-                <button class="btn delete">Clear completed tasks</button>
+                <button class="btn delete" data-clear-complete-task-btn>Clear completed tasks</button>
                 <button class="btn delete" data-delete-list-button>Delete list</button>
             </div>
         </div>
     </div>
 
     <script  defer src="index.js"></script>
+
+    <template id="task-template"> <!--template for one single task that is manipulated by JS code-->
+        <div class="task">
+            <input type="checkbox">
+            <label>
+                <span class="custom-checkbox"></span>
+            </label>
+        </div>
+    </template>
 </body>
 </html>
