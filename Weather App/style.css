@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    --clr-dark: hsl(200,100%,10%);
+    --clr-grey:lightslategray;
+    --clr-orange: orange;
+    --clr-light: #f4f4f4;
+}
+
+body{
+    margin: 0;
+    background-color: var(--clr-grey);
+    color: var(--clr-dark);
+    font-family: 'Merriweather',sans-serif;
+}
+
+.blured{
+    filter: blur(3px);
+    overflow: hidden;
+}
+
+.container{
+    background-color: var(--clr-light);
+    margin: 2rem auto;
+    width: 80%;
+    border-radius: .5rem;
+    padding: .25rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header-left{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    padding: .5rem;
+    border-right: 2px solid var(--clr-dark);
+}
+
+.fa-sun{
+    font-size: 2.5rem;
+    color: var(--clr-orange);
+}
+.fa-sun.large{
+    font-size: 5rem;
+}
+
+.icon{
+    font-size: 2.5rem;
+}
+
+.header-current-temp{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.header-right{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+
+.value-sub-info{
+    font-weight: 300;
+    margin-left: .3rem;
+    font-size: .8rem;
+}
+
+.day-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,150px);
+    gap: 1.1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.day-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--clr-dark);
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.day-card-day{
+    font-size: .9rem;
+    margin-top: .5rem;
+}
+
+.hour-section{
+    width: 90%;
+    text-align: center;
+    border-spacing: 0;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.hour-row{
+    background-color: hsl(94, 68%, 85%);
+}
+
+.hour-row:nth-child(2n){
+    background-color: hsl(94, 68%, 75%);
+}
+
+.hour-row > td{
+    padding: 0.25rem 0.5rem;
+}
