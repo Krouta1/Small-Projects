@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata';
+}
+
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+header{
+    padding: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    background: #fff
+}
+
+header i{
+    margin-right: 1rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn{
+    grid-column: span 2;
+    justify-self: center;
+}
+
+main .new-book{
+    cursor: pointer;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 1rem; 
+    background-color: rgb(15, 196, 228);
+}
+
+main .new-book:hover{
+    background-color: rgb(122, 225, 243);
+}
+
+#new-book-form{
+    display: none;
+    position: absolute;;
+    top: 300px;
+    left: 750px;
+}
+
+.form-container{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.form-container input{
+    padding: 0.5rem 3rem;
+}
+.form-container .check{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+    border: 1px solid #000;
+}
+
+.library{
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: 2rem;
+}
+
+.author{
+    display: flex;
+}
+
+.author p{
+    margin-right: 1rem;
+}
