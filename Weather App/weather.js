@@ -60,7 +60,7 @@ function parseCurrentHourly({hourly, current_weather}){
             iconCode: hourly.weathercode[index],
             temp: Math.round(hourly.temperature_2m[index]),
             feelsLike: Math.round(hourly.apparent_temperature[index]), //same as above
-            windspeed: Math.round(hourly.windspeed_10m[index]),
+            windSpeed: Math.round(hourly.windspeed_10m[index]),
             precip: Math.round(hourly.precipitation[index]*100) /100,
         }                                                           // i need filter to find current time at wich i should start
     }).filter(({timestamp})=> timestamp >= current_weather.time*1000)  // hour i am currently in or future
