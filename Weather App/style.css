@@ -15,11 +15,6 @@ body{
     font-family: 'Merriweather',sans-serif;
 }
 
-.blured{
-    filter: blur(3px);
-    overflow: hidden;
-}
-
 .container{
     background-color: var(--clr-light);
     margin: 2rem auto;
@@ -43,16 +38,13 @@ body{
     border-right: 2px solid var(--clr-dark);
 }
 
-.fa-sun{
-    font-size: 2.5rem;
-    color: var(--clr-orange);
+.weather-icon{
+    width: 5rem;
+    height: 5rem;
 }
-.fa-sun.large{
-    font-size: 5rem;
-}
-
-.icon{
-    font-size: 2.5rem;
+.weather-icon.large{
+    width: 8rem;
+    height: 8em;
 }
 
 .header-current-temp{
