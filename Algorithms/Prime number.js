@@ -28,4 +28,4 @@ function isPrime2 (n) {
     }
     return true
     
-}
+} //Big-O is O(sqrt(n))
