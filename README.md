@@ -17,3 +17,5 @@ Sites to view projects:
   Weather App: https://stately-parfait-054042.netlify.app
   
   Pokemon App : It is no CSS app, first React project !
+  
+  Infinite Scrolling: It is no CSS app, second React project :)
