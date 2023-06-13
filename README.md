@@ -18,4 +18,6 @@ Sites to view projects:
   
   Pokemon App : It is no CSS app, first React project !
   
-  Infinite Scrolling: It is no CSS app, second React project :)
+  Infinite Scrolling App: It is no CSS app, second React project :)
+  
+  Currency Convertor: Simple no CSS convertor with API. You need to generate your own key :) 
