@@ -4,7 +4,7 @@ import React,{ useEffect, useState } from 'react';
 import CurrencyRow from "./CurrencyRow";
 
 
-//const BASE_URL = `http://api.exchangeratesapi.io/v1/latest?access_key=${process.env.MY_API_KEY}` // this is not ideal but for starter
+const BASE_URL = `https://api.exchangeratesapi.io/v1/latest?access_key=${process.env.MY_API_KEY}` // this is not ideal but for starter
 // You need to generate your own API key here: https://exchangeratesapi.io/ . I will delete mine from .env
 
 function App() {
@@ -51,12 +51,12 @@ function App() {
     }
   }, [fromCurrency,toCurrency])
 
-  function handleFromAmountChange() {
+  function handleFromAmountChange(e) {
     setAmount(e.target.value)
     setAmountInFromCurrency(true)
   }
 
-  function handleToAmountChange() {
+  function handleToAmountChange(e) {
     setAmount(e.target.value)
     setAmountInFromCurrency(false)
   }
