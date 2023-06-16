@@ -22,4 +22,4 @@ Sites to view projects:
   
   Currency Convertor: Simple no CSS convertor with API. You need to generate your own key :) 
 
-  Flashcard quiz: Small react app with API and little bit of CSS styling. 
+  Flashcard quiz: Small react app with API and little bit of CSS styling. https://stalwart-moonbeam-706830.netlify.app
