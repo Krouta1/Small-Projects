@@ -12,21 +12,7 @@
       "username": "dave",
       "email": "dave@fake.com",
       "phone": "11122233",
-      "id": 2
-    },
-    {
-      "name": "David",
-      "username": "dave",
-      "email": "dave@fake.com",
-      "phone": "11122233",
       "id": 3
-    },
-    {
-      "name": "David",
-      "username": "dave",
-      "email": "dave@fake.com",
-      "phone": "11122233",
-      "id": 4
     }
   ]
 }
