@@ -25,3 +25,5 @@ Sites to view projects:
   Flashcard quiz: Small react app with API and little bit of CSS styling. https://stalwart-moonbeam-706830.netlify.app
 
   Little and simple Photoshop clone: https://eloquent-semifreddo-dbc688.netlify.app/
+
+  Crud with React - just some app to learn working with objects in react :)
