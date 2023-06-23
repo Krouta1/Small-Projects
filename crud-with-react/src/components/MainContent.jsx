@@ -2,7 +2,7 @@ import React from 'react'
 
 const MainContent = () => {
   return (
-    <div>MainContent</div>
+    <div>Poor boy there is nothing here:D. Try other tabs :P</div>
   )
 }
 
