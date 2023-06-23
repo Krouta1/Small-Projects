@@ -1,6 +1,7 @@
 
 import { Button, FormControl, FormGroup, Input, InputLabel, Typography, styled } from '@mui/material'
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { addUser } from '../service/api'
 
 // styles fro FromGroup
@@ -20,6 +21,7 @@ const initialVales = {
 
 const AddUser = () => {
   const [user, setUser] = useState(initialVales)
+  const navigate = useNavigate()
  
   function onValueChange(e){
     setUser({...user, [e.target.name]: e.target.value})
@@ -28,6 +30,7 @@ const AddUser = () => {
 
   async function addUserDetails(){
      await addUser(user)
+     navigate('/all')
   }
 
   return (
