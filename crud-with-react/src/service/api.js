@@ -14,6 +14,30 @@ export const getUsers = async () => {
     try{
         return await axios.get(API_URL)
     }catch(error){
-        alert('Users not found', error.message)
+        alert('Error while calling getUsers API', error.message)
+    }
+}
+
+export const getUser = async (data) => {
+    try{
+        return await axios.get(`${API_URL}/${data}`)
+    }catch(error){
+        alert('There is no such user', error.message)
+    }
+}
+
+export const editUser = async (data, id) => {
+    try{
+        return await axios.put(`${API_URL}/${id}`,data)
+    }catch(error){
+        alert('There is no such user', error.message)
+    }
+}
+
+export const deleteUser = async (id) => {
+    try{
+        return await axios.delete(`${API_URL}/${id}`)
+    }catch(error){
+        alert('Error while deleting user', error.message)
     }
 }
