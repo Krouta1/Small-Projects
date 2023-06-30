@@ -10,19 +10,25 @@ const Container = styled(Box)`
     }
 `
 
-const Expense = () => {
+const Expense = ({transactions}) => {
+
+    const amount = transactions.map(transaction => transaction.amount)
+    const income = amount.filter(item=> item > 0 ).reduce((amount,item)=>(amount+=item),0).toFixed(2)
+    const expense = (amount.filter(item=> item < 0 ).reduce((amount,item)=>(amount+=item),0) * -1).toFixed(2)
+
+
   return (
     <Container>
         <Card>
             <CardContent>
                 <Typography>Income</Typography>
-                <Typography style={{color:'green'}}>25 czk</Typography>
+                <Typography style={{color:'green'}}>{income} czk</Typography>
             </CardContent>
         </Card>
         <Card>
             <CardContent>
                 <Typography>Expense</Typography>
-                <Typography style={{color:'red'}}>10 czk</Typography>
+                <Typography style={{color:'red'}}>{expense} czk</Typography>
             </CardContent>
         </Card>
     </Container>
