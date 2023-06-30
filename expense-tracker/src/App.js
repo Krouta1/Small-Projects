@@ -44,11 +44,11 @@ function App() {
       <Component>
         <Box>
           <Balance transactions={transactions}/>
-          <Expense/>
-          <NewTransactions/>
+          <Expense transactions={transactions}/>
+          <NewTransactions setTransactions={setTransactions}/>
         </Box>
         <Box>
-          <Transactions transactions={transactions}/>
+          <Transactions transactions={transactions} setTransactions={setTransactions}/>
         </Box>
       </Component>
     </Box>
